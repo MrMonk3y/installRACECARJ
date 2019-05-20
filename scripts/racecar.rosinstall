@@ -1,0 +1,6 @@
+- git: {local-name: src/racecar,               version: master,        uri: 'https://github.com/RacecarJ/racecar.git'}
+- git: {local-name: src/vesc,                  version: master,		           uri: 'https://github.com/MrMonk3y/vesc'}
+- git: {local-name: src/racecar-controllers,   version: master,                    uri: 'https://github.com/RacecarJ/racecar-controllers.git'}
+- git: {local-name: src/zed-ros-wrapper,       version: master,                    uri: 'https://github.com/stereolabs/zed-ros-wrapper.git'}
+
+
