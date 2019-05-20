@@ -5,7 +5,7 @@
 # dirName defaults to racecar-ws
 
 WHEREAMI=$PWD
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 source jetsonUtilities/jetson_variables
 
 DEFAULTDIR=~/racecar-ws

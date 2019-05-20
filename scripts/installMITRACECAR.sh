@@ -4,7 +4,7 @@
 # dirName defaults to racecar-ws
 # Fetches RACECAR ROS components, installs dependencies, and then catkin_make the workspace
 
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 DEFAULTDIR=~/racecar-ws
 CLDIR="$1"
 if [ ! -z "$CLDIR" ]; then 

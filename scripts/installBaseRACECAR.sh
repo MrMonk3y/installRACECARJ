@@ -5,7 +5,7 @@
 # Fetches RACECAR ROS components, installs dependencies, and then catkin_make the workspace
 
 WHEREAMI=$PWD
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 source jetsonUtilities/jetson_variables
 # Is this the matching release?
 L4TVERSION=28.2.1

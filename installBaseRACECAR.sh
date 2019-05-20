@@ -11,7 +11,7 @@
 # Then setup the Catkin Workpsace for the RACECAR
 ./scripts/setupCatkinWorkspace.sh racecar-ws
 # One of the dependencies is missing, opencv3 for ros
-sudo apt-get install ros-kinetic-opencv3 -y
+sudo apt-get install ros-melodic-opencv3 -y
 # And now install the MIT RACECAR packages
 cd scripts
 ./installBaseRACECAR.sh racecar-ws
