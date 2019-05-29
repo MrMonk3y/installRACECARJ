@@ -9,8 +9,8 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 # Setup keys
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 # Installation
-sudo apt-get update
-sudo apt-get install ros-melodic-ros-base -y
+sudo apt update
+sudo apt install ros-melodic-ros-base -y
 # Add Individual Packages here
 # You can install a specific ROS package (replace underscores with dashes of the package name):
 # sudo apt-get install ros-melodic-PACKAGE
@@ -21,7 +21,7 @@ sudo apt-get install ros-melodic-ros-base -y
 # apt-cache search ros-melodic
 # 
 # Initialize rosdep
-sudo apt-get install python-rosdep -y
+sudo apt install python-rosdep -y
 # Certificates are messed up on the Jetson for some reason
 sudo c_rehash /etc/ssl/certs
 # Initialize rosdep
@@ -32,7 +32,7 @@ rosdep update
 grep -q -F 'source /opt/ros/melodic/setup.bash' ~/.bashrc || echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 # Install rosinstall
-sudo apt-get install python-rosinstall -y
+sudo apt install python-rosinstall -y
 #setup ROS environment variables
 grep -q -F ' ROS_MASTER_URI' ~/.bashrc ||  echo 'export ROS_MASTER_URI=http://localhost:11311' | tee -a ~/.bashrc
 grep -q -F ' ROS_IP' ~/.bashrc ||  echo "export ROS_IP=$(hostname -I)" | tee -a ~/.bashrc
